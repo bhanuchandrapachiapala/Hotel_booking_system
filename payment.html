@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lovely hotels</title>
+    <link rel="stylesheet" type="text/css" href="pay.css">
+	<script>
+function abc()
+{
+var retVal=confirm("Do you want to complete payment?");
+if(retVal==true)
+{
+document.write("THANK YOU! You have successfully completed your payment.");
+return true;
+}
+else{
+document.write("Your payment is cancelled");
+return false;
+}
+}
+</script>
+    </head>
+    <body allign="center" background="C:\Users\HP\Downloads\164264435-euro-wallpapers.jpg">
+	
+    
+	<div id="pay"><br>
+	<div id="v1">
+    <p>&nbsp;</p>
+    
+    
+	<h1>                                                  Payment</h1>
+		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
+			
+		<label for="mobile">Mobile No:</label> &nbsp;
+            		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+					
+					<label for="Card no">Card no:</label> &nbsp;
+            		<input id="Card no" name="Card no" placeholder="Card no" required="" type="text"> <br><br>
+					<label for="CVV">CVV:</label> &nbsp;
+            		<input id="CVV" name="CVV" placeholder="CVV" required="" type="text"> <br><br>
+		
+		
+		Payment :
+			
+			<select  name="type">
+				<option value="Credit Card">Credit Card</option>
+				<option value="Debit Card">Debit Card</option>
+				
+			</select><br><br>
+			
+			
+					<input type="submit" onclick="abc()">
+					<a href="#"><input type="submit" name="cancel" value="cancel"/></a>
+		
+
+  
+	</body></html>

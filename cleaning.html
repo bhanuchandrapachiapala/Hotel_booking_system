@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lovely hotels</title>
+    <link rel="stylesheet" type="text/css" href="cleaning.css">
+	<script>
+function abc()
+{
+var retVal=confirm("Do you want to avail for cleaning?");
+if(retVal==true)
+{
+document.write("THANK YOU!your order for service will be placed soon.");
+return true;
+}
+else{
+document.write("Your service order is cancelled");
+return false;
+}
+}
+</script>
+    </head>
+    <body allign="center" background="C:\Users\HP\Downloads\GettyImages-157383288-58c4e5465f9b58af5c20fab9.jpg">
+	
+    <ul>
+    
+        <li><a href="dropdownmenu.html">Home</a></li>
+        <li><a href="#">Food</a>
+		<ul>
+		    <li><a href="indian.html">Indian</a></li>
+		    <li><a href="chinese.html">Chinese</a></li>
+		    <li><a href="spanish.html">Spanish</a></li>
+		    <li><a href="mexican.html">Mexican</a></li>
+		</ul></li>
+        <li><a href="#">Services</a>
+		<ul>
+		    <li><a href="cleaning.html">Cleaning</a></li>
+		    <li><a href="ironing.html">Ironing</a></li>
+		    <li><a href="laundry.html">Laundry</a></li>
+		    
+		</ul></li>
+        <li><a href="book2.html">Booking</a></li>
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="ytu.html">Login</a></li>
+      </ul>
+<div id="pay"><br>
+	<div id="v1">
+    <p>&nbsp;</p>
+    
+    
+	<h1>                        Cleaning Service</h1>
+		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
+			
+		<label for="mobile">Mobile No:</label> &nbsp;
+            		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+					
+					<label for="Room no">Room no:</label> &nbsp;
+            		<input id="Room no" name="Room no" placeholder="Room no" required="" type="text"> <br><br>
+					<label for="Time">Time:</label> &nbsp;
+            		<input id="Time" name="Time" placeholder="HH:MM" required="" type="text"><select  name="type">
+				<option value="AM">AM</option>
+				<option value="PM">PM</option>
+				
+			</select> <br><br>
+					<input type="submit" onclick="abc()">
+					<a href="#"><input type="submit" name="cancel" value="cancel"/></a>
+</body></html>
